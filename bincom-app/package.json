@@ -1,0 +1,20 @@
+{
+  "name": "bincom-app",
+  "version": "1.0.0",
+  "description": "In partial fulfilment of bincom ICT opening for experienced software developer -Phase One. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-Integral/bincom-test.git"
+  },
+  "author": "Dev-Integral",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

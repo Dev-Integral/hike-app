@@ -1,5 +1,23 @@
-html
+doctype html
+html(lang='en')
   head
-    title Render HTML using PUG
+    title Bincom assessment
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+    style
+      include delta.css
   body
-    h1 Welcome
+    div.remark
+      nav
+        div.container
+          a(class='navbar-brand' href='http://localhost:3000/delta') Google
+          ul(class='nav navbar-nav')
+            li.active 
+              a(class='button' href='//google.com') Google
+            li 
+              a(class='button' href='//google.com') Google
+      div(class='jumbotron')
+      h1 Hello world!
+      p This is a simple pug page

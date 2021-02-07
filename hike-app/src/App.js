@@ -1,22 +1,15 @@
 import logo from './images/logo.png';
 import './App.css';
 
-/*window.addEventListener('click', ()=>{
-    let open = document.querySelector('.open');
-    open.classList.add('active');
-    let close = document.querySelector('.close')
-})*/
-function App() {
-  // function to select classlist
-  const selectElement = (S) => window.querySelector(S);
-  //Open the menu on click
-  selectElement('.open').addEventListener('click', ()=>{
-      selectElement('.nav-list').classList.add('active');
-  });
-  //Open the menu on click
-  selectElement('.close').window.addEventListener('click', ()=>{
-    selectElement('.nav-list').classList.remove('active');
-});
+const App = ()=>{
+const open =()=>{
+    let navList = document.querySelector('.nav-list');
+        navList.classList.add('active');
+}
+const close =()=>{
+    let navList = document.querySelector('.nav-list');
+        navList.classList.remove('active');
+}
 
   return (
     <div className="overall">
@@ -28,11 +21,11 @@ function App() {
                                 <img src={logo} alt="logo" />
                             </a>
                         </div>
-                        <div className="menu-icons open">
+                        <div className="menu-icons open" onClick={()=>{open()}} >
                             <i className="icon ion-md-menu"></i>
                         </div>
                         <ul className="nav-list">
-                            <div className="menu-icons close">
+                            <div className="menu-icons close" onClick={()=>{close()}}>
                                 <i className="icon ion-md-close"></i>
                             </div>
                             <li className="nav-item">
